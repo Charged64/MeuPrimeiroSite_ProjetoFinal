@@ -1,0 +1,221 @@
+html, body{
+    margin: 0;
+}
+body{
+    background-color: whitesmoke;
+}
+header{
+   
+    color: rgb(0, 0, 0);
+    height: 11%;
+    width: 100%;
+    position: absolute;
+}
+#menu{
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+}
+li{
+    float: left;
+    padding: 20px 20px 20px 20px;
+    text-decoration-style: solid;
+}
+li:hover{
+    background-color: rgb(255, 153, 0);
+}
+#logo{
+    width: 170px;
+    position: absolute;
+    margin-left: 3%;
+}
+#imagem-fundo{
+    background: url(Imagens/lakerain-snake-b-8CyzvGWM4-unsplash.jpg);
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+#titulo{
+    padding-top: 15%;
+}
+#subtitulo{
+    color: white;
+}
+#botao{
+    color: white;
+    border: 4px white solid;
+    padding: 10px 10px 10px 10px ;
+}
+#foto{
+    width: 80%;
+    clear: both;
+    padding-left:10%;
+    margin-top: 5%;
+  
+}
+.mundo{
+    padding: 2%;
+    width: 100%;
+    
+}
+.ods, .poluicao{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    clear: both;
+}
+.section{
+    padding: 20px;
+    float: left;
+}
+.coluna{
+    float: left;
+    padding: 0 5px;
+    position: relative;
+    width: 45%;
+    
+}
+.justificado{
+    text-align: justify;
+    padding: 0 0 0 10%;
+    clear: both;
+}
+.center{
+    text-align: center;
+    clear: both;
+    padding-top: 5%;
+}
+.enunciado{
+    text-align: center;
+    clear: both;
+    padding: .5%;
+    margin-top: 10%;
+}
+.dois{
+    float: right;
+    padding: 0 5%;
+    position: relative;
+    width: 40%;
+    margin-top: 10%;
+}
+#sustentavel{
+    margin-top: 5%;
+    width: 50%;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+#poluicao{
+    margin-top: 5%;
+    width: 60%;
+    padding-left: 10%;
+    margin-top: 5%;
+}
+.pequeno{
+    width: 150px;
+    
+ }
+#opcoes{
+    text-align: center;
+    padding: 5%;
+    margin-top: 10%;
+}
+.eolica{
+    width: 15%;
+    float: left;
+    padding: 0 5%; 
+    position: relative;
+}
+footer{
+    background-color: rgb(255, 166, 0);
+    float: left;
+    width: 100%;
+}
+#fix{
+    float: left;
+    width: 40%;
+    clear: both;
+    margin: 0%;
+    padding:0%;
+    margin-top: 15%;
+    padding-left: 5%;  
+}
+#arrumar{
+    text-align:justify;
+    padding-right: 5%;
+    margin-top: 10%;
+    clear: none;
+} 
+
+#alternativ{
+    text-align: center;
+}
+.colunatres{
+    float: left;
+    position: relative;
+    margin-top: 5%;
+    width: 27%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.centralizado{
+    text-align: center;
+}
+@media all and(max-widht: 768px) {
+    #menu{
+        display: block;
+    }
+    .mundo, .ods, .dois, .texto, .poluicao, .esquerda, .meio, .direita, .fim{
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+
+}
+#check{
+    display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+    background-color: rgb(243, 187, 4);
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+nav a{
+    text-decoration: none;
+}
+.link{
+    background-color: rgb(231, 171, 6);
+    padding: 20px;
+    font-family: Arial;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: whitesmoke;
+    opacity: 0;
+    margin-top: 200px;
+
+}
+link :hover{
+    background-color: rgb(255, 238, 0);
+}
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+    transition-delay: .2s;
+}
